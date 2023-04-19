@@ -31,7 +31,6 @@ public class CalculatorTest {
     void sevenTimesTenShouldEqualSeventy(){
         int a = 7;
         int b = 10;
-
         assertEquals(70, calculator.multiply(7, 10));
     }
 
@@ -39,39 +38,31 @@ public class CalculatorTest {
     void sevenDividedByFiveEqualsOntPointFour(){
         int a = 7;
         int b = 5;
-
         assertEquals(1.4, calculator.divide(7,5));
     }
 
     @Test
     void verifySquareRootOfNine(){
         int a = 9;
-
         assertEquals(3, calculator.squareRootOf(9));
     }
 
     @Test
     void getArea(){
         int a = 100;
-        //förstod inte riktigt hur jag skulle räkna ut denna
-        calculator.getArea(100);
+        assertEquals(31415.93, calculator.getArea(100));
 
     }
     @Test
     void getCircumference(){
         int a = 50;
-        //förstod inte riktigt hur jag skulle räkna ut denna heller
-        calculator.getCircumference(50);
+        assertEquals(314.16, calculator.getCircumference(50));
 
     }
     @Test
     void fivePlusSeventeenShouldEqualTwentyTwo(){
-
         int a = 5;
         int b = 17;
         Assertions.assertEquals(22, calculator.add(a,b));
     }
-
-
-
 }
